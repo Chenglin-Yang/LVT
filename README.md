@@ -139,7 +139,7 @@ If you find LVT is helpful in your project, please consider citing our paper.
 
 ## Credits
 
-Image classificatio code is based on [VOLO](https://github.com/sail-sg/volo).
+Image classification code is based on [VOLO](https://github.com/sail-sg/volo).
 Semantic segmentation code is based on [SegFormer](https://github.com/NVlabs/SegFormer).
 Panoptic segmentation code is based on [mmdetection](https://github.com/open-mmlab/mmdetection).
 Part of modules are based on [PVT](https://github.com/whai362/PVT) and [Dynamic-convolution-Pytorch](https://github.com/kaijieshi7/Dynamic-convolution-Pytorch).
