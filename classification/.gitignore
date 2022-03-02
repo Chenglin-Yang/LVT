@@ -1,0 +1,9 @@
+configs/.ipynb_checkpoints/
+*.pyc
+models/.ipynb_checkpoints/
+*.csv
+work_dirs/
+.ipynb_checkpoints
+work_dirs_debug
+*.ipynb
+checkpoints
