@@ -136,6 +136,8 @@ If you find LVT is helpful in your project, please consider citing our paper.
   year={2021}
 }
 ```
+## License
+Please see the license file, if you have further questions contact Yilin Wang 
 
 ## Credits
 
