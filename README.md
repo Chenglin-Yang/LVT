@@ -23,16 +23,22 @@ LVT | 74.8 | 3.4 | 0.9 | [Download](https://livejohnshopkins-my.sharepoint.com/:
 
 - ADE20K semantic segmentation
 
-| Method | Encoder | mIoU | Params (M) | FLOPs (G) | FPS (512) | Model |
+| Method | Encoder | mIoU | Params (M) | FLOPs (G) | FPS (512) <sup>1</sup> | Model |
 |:-----------:|:--------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
 SegFormer | LVT | 39.3 | 3.9 | 10.6 | 45.5 | [Download](https://livejohnshopkins-my.sharepoint.com/:u:/g/personal/cyang76_jh_edu/ERCKoFH80EREtzvmeTklq6MBa-Iw5nX9IM7w5lwFsW6UjA?e=eNhaf7) |
 
 - COCO panoptic segmentation
 
-| | Method | Backbone | PQ | PQ<sup>th</sup> | PQ<sup>st</sup> | Params (M) | FLOPs (G) | FPS (1333x800) | Model |
+| | Method | Backbone | PQ | PQ<sup>th</sup> | PQ<sup>st</sup> | Params (M) | FLOPs (G) | FPS (1333x800) <sup>2</sup> | Model |
 |:-----------:|:--------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
 | val | Panoptic FPN | LVT | 42.8 | 49.5 | 32.6 | 5.4 | 56.4 | 20.4 | [Download](https://livejohnshopkins-my.sharepoint.com/:u:/g/personal/cyang76_jh_edu/ESd4pNvGu1VGjJ14_XQ1ViABJldEqDmtEH5UAGmBSbm-pA?e=mNGeN5) |
 | test-dev | Panoptic FPN | LVT | 43.0 | 49.9 | 32.6 | 5.4 | 56.4 | 20.4 | [Download](https://livejohnshopkins-my.sharepoint.com/:u:/g/personal/cyang76_jh_edu/ESd4pNvGu1VGjJ14_XQ1ViABJldEqDmtEH5UAGmBSbm-pA?e=mNGeN5) |
+
+1. (512): The short side of input is rescaled to 512 with the aspect ratio unchanged.
+
+2. (1333x800): The input is rescaled such that the maximum length does not exceed 1333 and the minimum length 800. The aspect ratio is kept.
+
+> The FPS is calculated on 2000 images on a single NVIDIA V100 GPU.
 
 ## Classification Usage
 
